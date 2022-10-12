@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 600px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.image-container,
+.text-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.text-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container>h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 35px;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+.text-container>h4 {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.text-container>p {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-container h1 {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: hsl(158, 36%, 37%);
+}
+
+.price-container h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-right: 35px;
+}
+
+.button-container {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+button img {
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: hsl(159, 39%, 20%);
+    cursor: pointer;
+}
+
+img[src*="mobile"] {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: 80%;
+    }
+
+    .image-container {
+        height: 40%;
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text-container {
+        width: 100%;
+        height: 80%;
+    }
+
+    button {
+        height: 100%;
+    }
+}
