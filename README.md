@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://cenkderman.github.io/Product-preview-card/](https://cenkderman.github.io/Product-preview-card/)
+- Solution URL: [https://github.com/cenkderman/Product-preview-card](https://github.com/cenkderman/Product-preview-card)
 - Live Site URL: [https://cenkderman.github.io/Product-preview-card/](https://cenkderman.github.io/Product-preview-card/)
 
 ## My process
